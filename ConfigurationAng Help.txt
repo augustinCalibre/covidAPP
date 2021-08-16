@@ -1,0 +1,35 @@
+help django
+
+django-admin help
+
+Star project
+django-admin startproject <project_Name>
+
+
+Star App
+django-admin startapp <app_Name>
+
+Create news Admin 
+python manage.py createsuperuser
+
+before to create admin, authentify this migration 
+to see all migration 
+python manage.py makemigrations
+
+Uprade Migration; to init Admin user Migration
+ python manage.py migrate
+
+To run Server 
+
+python manage.py runserver 
+
+
+
+///////////////////
+
+
+Configuration de  l'application
+path :::Covid20/Settings.py
+1- Add <covid19> to INTALLED App
+2-Add <Template> to TEMPLATES-> DIR[]
+3-ADD STATICFILES-DIRS=['static']
