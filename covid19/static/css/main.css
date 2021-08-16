@@ -1,0 +1,173 @@
+body{
+   
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   padding:0;
+   margin:0;
+   /* ANNI?ATION BG 1 */
+   /* background: linear-gradient(-45deg, blue, Green, #07166e, #034723);
+   background-size: 1500% 1500%;
+   animation: gradient 5s ease infinite; */
+   /* background-image: linear-gradient(to right, blue, green); */
+}
+/* ANI?ATION KEY GFRAME 1 */
+/* @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  } */
+/* ANNI?ATION Z */
+.bg {
+    animation:slide 30s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, green 50%,blue 40%);    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+
+  
+
+
+
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+.container{
+    display:flex;
+    flex-direction: column;
+}
+
+
+/* BEGIN NAV BAR  */
+.container .navBar{
+    display: flex;
+    /* border:solid red; */
+    flex-direction: column;
+    /* box-shadow: 10px 10px rgba(93, 89, 89,.3); */
+}
+.container .navBar .navHeader{
+    display: flex;
+    flex-direction: row;
+    /* border:solid red; */
+    justify-content: space-between;
+    align-items: center;
+}
+.container .navBar .navHeader h3{
+    color:white;
+    font-size: 2rem;
+}
+.container .navBar .navHeader p{
+    
+    color:white;
+    font-size: 1.5rem;
+}
+.container .navBar .navHeader p a{
+    color:white;
+    font-size: 1.5rem;
+}
+.container .navBar .navMain{
+    border:solid  linear-gradient(to right,blue, green);
+  
+    display: Flex;
+    
+    justify-content: space-between;
+        
+}
+.container .navBar .navMain a{
+  
+    color:white;
+    font-size: 2rem;
+    /* background-color: rgb(192, 15, 68); */
+    text-decoration: none;
+    width: 92%;
+  
+    font-weight: 100;
+    border-radius: 20px;
+    
+    text-align: center;
+    transition: 2s;
+
+}
+
+.container .navBar .navMain a:hover{
+  
+    color:white;
+    font-size: 1.5rem;
+    background-color: rgb(142, 142, 182);
+    text-decoration: none;
+    width: 92%;
+    height: 3rem;
+    border-radius: 20px;
+    font-weight: 100;
+    
+}
+
+
+/* END NAV BER */
+
+
+
+/* DEBUT BLOCK INTRO */
+.container .content{
+    /* ECRIRE */
+}
+.container .content .blockIntro{
+    display: flex;
+    align-items: center;
+    background-image:linear-gradient(to right,blue, green);
+    margin-bottom: 2rem;
+
+    
+}
+.container .content .blockIntro .ncase{
+    display:flex;
+    flex-direction: column;
+    margin-left: 3rem;
+   
+    flex:6;
+    
+}
+.container .blockIntro .ncase p{
+    flex:3;
+    font-size: 3rem;
+    color:rgb(255, 255, 255);
+   
+}
+
+.container .blockIntro .ncase span{
+    font-size: 2rem;
+    background-color: white;
+    color:red;
+    flex:3;
+    width:90%;
+    
+}
+.container .blockIntro img{
+    flex:3;
+    height:20%;
+    width:20%;
+    
+}
