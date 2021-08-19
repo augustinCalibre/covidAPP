@@ -1,3 +1,4 @@
+from django.http.response import JsonResponse
 from .models import cityStat
 from django.shortcuts import render
 
@@ -15,3 +16,11 @@ def stat(request):
     ncas=cityStat.objects.aggregate(Sum('Ncas'))
     title='statistique'
     return render(request,'statistique.html',{'titre':title,'ncas':ncas})
+
+def cartographie(request):
+    ncas=cityStat.objects.all()
+    title='Cartographie'
+    
+
+    return render(request,'carte.html',{'titre':title,'ncas':ncas})
+  

@@ -7,4 +7,5 @@ urlpatterns = [
     path('',views.index),
     path('home',views.index),
     path('statistique',views.stat),
+    path('carte',views.cartographie),
 ]

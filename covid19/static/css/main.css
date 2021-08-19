@@ -147,7 +147,7 @@ body{
     flex-direction: column;
     margin-left: 3rem;
    
-    flex:6;
+    flex:3;
     
 }
 .container .blockIntro .ncase p{
@@ -167,7 +167,8 @@ body{
 }
 .container .blockIntro img{
     flex:3;
-    height:20%;
+    height:2%;
     width:20%;
     
 }
+
