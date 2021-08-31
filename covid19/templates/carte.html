@@ -198,11 +198,11 @@
                 const { Ncas } = item.fields;
                 if (Ncas > 200) {
                     e.target.children[0].style.fill = "red";
-
-                    // Changing contents
-                    changeResultBodies(item,e.target);
-                    
                 }
+                else {
+                    e.target.children[0].style.fill = "green";
+                } 
+                changeResultBodies(item,e.target);
                 e.target.children[0].addEventListener('mouseout', (e) => {
                     e.target.style.fill = "#a4ced2";
                 })
