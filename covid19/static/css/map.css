@@ -17,10 +17,13 @@
     fill:#05570c;
     stroke: #FFF;
     stroke-width: 3px;
-
-   
-    width:50%;
-
     transition: fill .6s;
   }
   
+  
+  .map_red {
+    fill:red !important;
+    stroke: #FFF;
+    stroke-width: 3px;
+    transition: fill .6s;
+  }

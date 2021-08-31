@@ -1,10 +1,17 @@
 from django.http.response import JsonResponse
+
+# //serializers Django import 
+
+from django.core import serializers
 from .models import cityStat
 from django.shortcuts import render
 
 from django.http import HttpResponse
 
 from django.db.models import Sum
+
+
+
 
 def index(request):
     ncas=cityStat.objects.aggregate(Sum('Ncas'))
@@ -18,7 +25,10 @@ def stat(request):
     return render(request,'statistique.html',{'titre':title,'ncas':ncas})
 
 def cartographie(request):
-    ncas=cityStat.objects.all()
+    
+    ncas=serializers.serialize("json",cityStat.objects.all())
+    # Convertir les données en JSON
+
     title='Cartographie'
     
 
