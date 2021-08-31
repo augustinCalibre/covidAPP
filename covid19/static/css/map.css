@@ -1,10 +1,62 @@
-.map{
+/* .map{
     
- 
-  width:50%;
+ display: flex;
+ flex-direction: row;
+  width:100%;
+  
+}
+.map svg{
+  flex:10
+} */
+
+.map-content {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 1;
 }
 
-.map path{
+.map-svg,.modal-svg {
+  flex-basis: 45%;
+  min-width: 200px;
+}
+
+.modal-svg {
+  height: 450px;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.hide_modal_svg {
+  display: none;
+}
+
+.modal-header {
+  display: grid;
+  padding: 1.5rem;
+  background-color: white;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+
+.modal-svg .results {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result {
+  flex-basis: 32%;
+  box-shadow: 1px 3px 10px rgba(10, 245, 10, 0.541);
+  background-color: white;
+  padding: 1rem;
+}
+
+
+.map-svg path{
   fill:#a4ced2;
   stroke: #FFF;
   stroke-width: 3px;
@@ -13,7 +65,7 @@
   width:50%;
 }
 
-.map path:hover{
+.map-svg path:hover{
     fill:#05570c;
     stroke: #FFF;
     stroke-width: 3px;
@@ -27,3 +79,67 @@
     stroke-width: 3px;
     transition: fill .6s;
   }
+
+
+
+
+
+/* 
+  .modal{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border-radius: 29px;
+    box-shadow: 1px 2px 0 0 rgba(66, 70, 67, 0.5);
+    justify-content: center;
+    text-align: center;
+    flex: 17;
+    width: 90rem;
+  }
+  
+  .modal .modalitem {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .modal .ville {
+
+    background-color: white;
+    margin: 1rem;
+    padding: .3rem;
+    height: 300px;
+    border-radius: 5px;
+    font-size: 2rem;
+    text-align: center;
+    color: green;
+    text-align: center;
+  }
+
+  
+
+  .modal .modalitem p {
+
+    background-color: white;
+    margin: .5rem;
+    padding: .4rem;
+    border-radius: 5px;
+    font-size: 2rem;
+    text-align: center;
+ 
+    text-align: center;
+  
+  }
+
+  
+
+  .modal .modalitem p span {
+
+    color: green;
+    font-size:2rem;
+    text-align: center;
+ 
+   
+  
+  } */
