@@ -5,8 +5,8 @@
 {%endblock%}
 
 
-{% block content %}
-<div class="content">
+{% block welcome%}
+<!-- <div class="content">
     <div class="blockIntro">
 
 
@@ -19,12 +19,136 @@
         <img src="static/images/covid.png" alt="" srcset="">
         <!-- <iframe width="320" height="690" src="https://www.covid19-ci.info/2fRL7EeOQlU.html" frameborder="0"></iframe> -->
 
+<!--         
+    </div>
+
+    <div class="blockIntro1">
+
+
+        <div class="ncase">
+            <p>Lorem ipsum dolor sit </p>
+            <span>Lorem ipsum dolor sit</span>
+        </div>
+
+
+
+        
     </div>
 
     
     
-</div>
-{% endblock content %}
+</div> --> 
+<section class="home-slider" id="home">
+    <div class="default-slider slick">
+      <div class="slide">
+        <div class="slide-img parallax-effect" style="background:url(/static/assets/images/slides/home-bg-1.jpg) center center / cover scroll no-repeat;"></div>
+        <div class="hero-text-wrap">
+          <div class="hero-text">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3 class="upper-case dark-color font-600">Infection</h3>
+                  <h1 class="upper-case font-800 default-color">Covid 19</h1>
+                  <p class="dark-color">La maladie à coronavirus (COVID-19) est une maladie infectieuse causée par un nouveau virus. Elle provoque une maladie respiratoire (comme la grippe) avec des symptômes tels que la toux, la fièvre et, dans les cas les plus graves, des difficultés respiratoires.</p>
+                  <p class="text-left mt-30"><a class="btn btn-color btn-circle btn-md">Comment se proteger</a> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-img parallax-effect" style="background:url(/static/assets/images/slides/home-bg-2.jpg) center center / cover scroll no-repeat;"></div>
+        <div class="hero-text-wrap">
+          <div class="hero-text">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-7">
+                  <h3 class="upper-case dark-color font-600">Reste chez toi</h3>
+                  <h1 class="upper-case font-800 green-color">Soit prudent</h1>
+                  <p class="dark-color">L'Italie a signalé 683 nouveaux décès dans le cadre de la pandémie de coronavirus, portant son total à 7 503. L'Espagne, quant à elle, a enregistré plus de 700 décès au cours des dernières 24 heures..</p>
+                  <p class="text-left mt-30"><a class="btn btn-green btn-circle btn-md">apropos du virus</a> </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--=== Hero Slider End ===-->
+
+  
+
+  <!--=== Counter Start ===-->
+  <section class="parallax-bg fixed-bg pt-70 pb-70" data-stellar-background-ratio="0.2" style="background-image: url(/static/assets/images/background/pattern-parallax.jpg);">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="counter-wrap">
+            <h2><span class="counter">{{ncas.Ncas__sum}}</span></h2>
+            <h3>Nombre de cas</h3>  
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="counter-wrap">
+            <h2><span class="counter">{{ndeces.Ndeces__sum}}</span></h2>
+            <h3>Nombre de décès</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="counter-wrap">
+            <h2><span class="counter">{{ngueris.Ngueris__sum}}</span></h2>
+            <h3>Nombre de guéris</h3>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="counter-wrap">
+            <h2><span class="counter">{{casActif}}</span></h2>
+            <h3>Cas Actif</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--=== Counter End ===-->
+
+  <!--=== Transmission Start ===-->
+  <section>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-md-6 heading-style-one box-title-two text-left">
+  				<h6 class="red-color text-uppercase">Comment le coronavirus se propage-t-il ?</h6>
+  				<h2><span class="font-700">Transmission du (COVID-19)</h2>
+          <p>Cette version met à jour la publication du 27 mars en fournissant des définitions des gouttelettes par taille de particule et en ajoutant trois publications pertinentes. </p>
+  			</div>
+  		</div>
+
+      <div class="row mt-50">
+  			<div class="col-md-4 main-service-box text-center col-sm-4 feature-box">
+  				<i class="infection-icon img-icon"></i>
+  				<h4>Contact humain</h4>
+  				<p>Une personne peut être infectée lorsqu’elle inhale des aérosols ou des gouttelettes contenant le virus ou lorsque ces derniers entrent directement en contact avec ses yeux, son nez ou sa bouche.</p>
+  			</div>
+  			<div class="col-md-4 main-service-box text-center col-sm-4 feature-box">
+  				<i class="earth-icon img-icon"></i>
+  				<h4>Espace contaminé</h4>
+  				<p>On peut aussi être infecté lorsque l'on touche des surfaces contaminées par le virus, puis que l’on porte les mains aux yeux, au nez ou à la bouche avant de se les être lavées.</p>
+  			</div>
+  			<div class="col-md-4 main-service-box text-center col-sm-4 feature-box">
+  				<i class="food-icon img-icon"></i>
+  				<h4>Objet contaminé</h4>
+  				<p>Le virus peut se propager lorsque de petites particules liquides sont expulsées par la bouche ou par le nez quand une personne infectée tousse, éternue, parle, chante ou respire profondément</p>
+  			</div>
+  		</div>
+  	</div>
+  </section>
+
+ 
+  <!--=== Transmission End ===-->
+{% include "footer.html" %}
+{% endblock welcome %}
     
 
 

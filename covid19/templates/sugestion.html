@@ -1,0 +1,59 @@
+{% extends 'main.html' %}
+{% include "nav.html" %}
+
+{% block sugestion %}
+
+<section>
+
+    <div class="container">
+
+       
+            <div class="row">
+                <div class="col-md-6 heading-style-one box-title-two text-left">
+                    <h6 class="red-color text-uppercase">Vous avez une idée ou des preocupations dite le nous</h6>
+                    <h2><span class="font-700">veuillez entrer votre suggestion ici</h2>
+            <p>poour nous proteger et  vous protéger et contribuer à éviter la propagation du virus</p>
+                </div>
+            </div>
+
+            <div class="row mt-100">
+                <div class="col-md-12 contact-box">
+                    <form class="post-form" action="#"  name="contact-form" enctype="multipart/form-data" action="#" method="POST" >
+                    {% csrf_token %}
+                    
+                    <div class="messages"></div>
+                    <div class="row">
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                          <label class="sr-only" for="nom">votre nom</label>
+                          <input type="text" name="nom" class="form-control" id="name" required placeholder="Your Name" data-error="Your Name is Required">
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-sm-6">
+                        <div class="form-group">
+                          <label class="sr-only" for="email">votre Mail</label>
+                          <input type="email" name="email" class="form-control" id="email" placeholder="Your Email" required data-error="Please Enter Valid Email">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="sr-only" for="suggest">Votre Suggestion</label>
+                      <textarea name="suggest" class="form-control" id="message" rows="7" placeholder="Your Message" required data-error="Please, Leave us a message"></textarea>
+                    </div>
+                    <div class="text-right">
+                      <button type="submit" name="submit" class="btn btn-color btn-md btn-circle btn-animated-none remove-margin"><span>Send Mail</span></button>
+                    </div>
+                  </form>
+                </div>
+        
+           
+
+    </div>
+    
+
+</section>
+
+
+
+{% include "footer.html" %}
+{% endblock sugestion %}

@@ -1,0 +1,44 @@
+{% extends 'main.html' %}
+
+{% block title %}
+
+{%endblock%}
+
+
+{% block symptom %}
+  <!--=== Symptoms Start ===-->
+  <section class="light-bg" id="symptom">
+    <div class="container">
+        <div class="row">
+      <div class="col-md-6 heading-style-one box-title">
+                <h6 class="default-color text-uppercase">Coronavirus symptom</h6>
+                <h2><span class="font-700">Quelles sont-elles et dois-je appeler le médecin ?</span></h2>
+        <p>Elle est causée par un membre de la famille des coronavirus qui n'a jamais été rencontré auparavant. Comme d'autres coronavirus, il est passé des animaux à l'homme.</p>
+                 <div class="welcome-style-two mt-30">
+                     <div class="thin-border-purple thin-borders pull-left"></div>
+                      <p class="pull-left">Selon l'OMS, les symptômes les plus courants du Covid-19 sont la fièvre, la fatigue et une toux sèche. Certains patients peuvent également présenter un écoulement nasal, un mal de gorge, une congestion nasale et des courbatures ou une diarrhée.</p>
+                  </div>
+            </div>
+      <div class="col-md-6">
+                <img class="img-responsive symptom-img" src="/static/assets/images/symptome.png" alt="symptoms"/>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=== Symptoms End ===-->
+<section class="parallax-bg fixed-bg pt-200 pb-200" style="background-image: url(/static/assets/images/background/parallax-bg.jpg);">
+    <div class="gradient-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-md-offset-5">
+                <div class="center-layout">
+              <div class="v-align-middle"> <a class="popup-youtube" href="https://www.youtube.com/watch?v=ycaV03gsCkc">
+                <div class="play-button"><i class="eicon mdi mdi-play"></i> </div>
+                </a> </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include "footer.html" %}
+{% endblock %}
