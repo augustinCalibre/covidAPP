@@ -1,12 +1,14 @@
 
 
 from django import  forms
-from django.db.models import fields
+
+from .models import suggestion
 
 
-class suggestionForms(forms.Form):
+class suggestionForms(forms.ModelForm):
 
     class Meta:
+        model=suggestion
         fields=["nom","email","suggest"]
         
 #    nom= forms.CharField(label="votre nom")

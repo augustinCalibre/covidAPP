@@ -15,10 +15,17 @@
             <p>poour nous proteger et  vous protéger et contribuer à éviter la propagation du virus</p>
                 </div>
             </div>
-
+            
             <div class="row mt-100">
+                {% if messages %}
+                <ul class="messages">
+                  {% for message in messages %}
+                  <li {% if message.tags %} class="{{message.tags}}" {% endif %} >{{message}}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
                 <div class="col-md-12 contact-box">
-                    <form class="post-form" action="#"  name="contact-form" enctype="multipart/form-data" action="#" method="POST" >
+                    <form class="post-form" action="/sugestion"  name="suggestion-form" enctype="multipart/form-data" action="#" method="POST" >
                     {% csrf_token %}
                     
                     <div class="messages"></div>

@@ -1,6 +1,7 @@
 from django.forms.forms import Form
 from django.http.response import JsonResponse
 from .formulaire import suggestionForms
+from django.contrib import messages
 
 # //serializers Django import 
 
@@ -78,10 +79,13 @@ def question(request):
     return render(request,'question.html',{'titre':title})
 
 def sugestion(request):
-    form=suggestionForms(request.POST or None)
     
-    if form.is_valid():
-        form.save()
+    
+    if request.method=='POST':
+        form=suggestionForms(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request,'Suggestion bien envoyé')
 
 
   
@@ -90,6 +94,8 @@ def sugestion(request):
     context={'suggestionForms':suggestionForms}
     
     return render(request,'sugestion.html',context)
+
+
 
 
 def Covidworld(request):
