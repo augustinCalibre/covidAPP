@@ -7,7 +7,7 @@ from .models import cityStat
 from .models import suggestion
 
 class cityStatAdmin (admin.ModelAdmin):
-    list_display=('Ncas','Ndeces','Ngueris','Nvacine')
+    list_display=('Ncas','Ndeces','Ngueris','Nvacine','cleSvg')
 
 class suggestionAdmin (admin.ModelAdmin):
     list_display=('nom','email','suggest')

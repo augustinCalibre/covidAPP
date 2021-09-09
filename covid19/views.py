@@ -3,6 +3,7 @@ from django.http.response import JsonResponse
 from .formulaire import suggestionForms
 from django.contrib import messages
 
+
 # //serializers Django import 
 
 from django.core import serializers
@@ -86,7 +87,7 @@ def sugestion(request):
         if form.is_valid():
             form.save()
             messages.success(request,'Suggestion bien envoyé')
-
+  
 
   
 

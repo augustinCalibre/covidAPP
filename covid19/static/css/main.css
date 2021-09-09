@@ -5,6 +5,64 @@
   font-size: 25px;
 
 }
+.about{
+  padding: 0px;
+}
+
+.selectconfig{
+  display: flex;
+  padding: 20px;
+ 
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+ .formSelect1 , .formSelect2{
+  width: 100%;
+  padding: 20px;
+
+}
+.formSelect1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.formSelect2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.formSelect1 select {
+  width: 40%;
+  background-color: rgba(107, 103, 103, 0.411);
+  border: none;
+  border-radius: 20px ;
+ 
+}
+
+
+
+
+
+.formSelect1 input , .formSelect2 input{
+  display: flex;
+  width: 40%;
+  background-color: rgba(107, 103, 103, 0.411);
+  border: none;
+  border-radius: 20px ;
+ 
+}
+
+
+
+.chartconfig{
+  margin: 0px;
+  padding: 10px;
+ 
+  height: 500px;
+}
 
 
 

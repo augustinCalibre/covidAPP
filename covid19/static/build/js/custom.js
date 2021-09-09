@@ -392,10 +392,35 @@ function init_charts() {
 
 
 /* ECHRTS */
+// const selecttt=document.querySelector("#cas")
+function modelisation(){
+    const selecttt=document.querySelector("#cas")
 
+    const dname =document.querySelector("#fname")
+    const nndeces =document.querySelector("#ndeces")
+    const ngueris =document.querySelector("#ngueris")
 
-
-
+for (let i = 0; i < item.length; i++) {
+    const element = ville[i];
+    const el=document.createElement('option');
+    el.textContent=element;
+    dname.placeholder="NOMBRE DE CAS  : "+NCas[selecttt.selectedIndex]
+    nndeces.placeholder="NOMBRE DE DECES : "+NDeces[selecttt.selectedIndex]
+    ngueris.placeholder="NOMBRE DE GUERIS : "+NGueris[selecttt.selectedIndex]
+    selecttt.appendChild(el)     
+}
+    selecttt.addEventListener('change',()=>{
+        for (let i = 0; i < item.length; i++) {
+            const element = ville[i];
+            const el=document.createElement('option');
+            el.textContent=element;
+            dname.placeholder="NOMBRE DE CAS  : "+NCas[selecttt.selectedIndex]
+            nndeces.placeholder="NOMBRE DE DECES : "+NDeces[selecttt.selectedIndex]
+            ngueris.placeholder="NOMBRE DE GUERIS : "+NGueris[selecttt.selectedIndex]
+        }
+    })
+   
+}
 
 $(document).ready(function() {
 
@@ -403,6 +428,7 @@ $(document).ready(function() {
     
     init_EasyPieChart();
     init_charts();
+    modelisation()
     
     
 
