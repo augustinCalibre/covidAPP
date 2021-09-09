@@ -14,3 +14,8 @@ class suggestion(models.Model):
     nom=models.CharField(max_length=200)
     email=models.CharField(max_length=200)
     suggest=models.CharField(max_length=255)
+
+class contact(models.Model):
+    nom=models.CharField(max_length=200)
+    email=models.CharField(max_length=200)
+    suggest=models.CharField(max_length=255)

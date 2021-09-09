@@ -1,8 +1,13 @@
 from django.forms.forms import Form
 from django.http.response import JsonResponse
 from .formulaire import suggestionForms
-from django.contrib import messages
+from .formulaire import contactForms
 
+
+# DJANGO MESSAGE CONFIG
+from django.contrib import messages
+from django.core.mail import send_mail
+from django.conf import settings
 
 # //serializers Django import 
 
@@ -87,7 +92,9 @@ def sugestion(request):
         if form.is_valid():
             form.save()
             messages.success(request,'Suggestion bien envoyé')
-  
+
+
+    
 
   
 
@@ -97,6 +104,25 @@ def sugestion(request):
     return render(request,'sugestion.html',context)
 
 
+
+def contact(request):
+    title='contact'
+    form=contactForms(request.POST)
+    if form.is_valid():
+        form.save()
+        messages.success(request,'Message bien envoyé')
+
+        
+  
+  
+
+
+
+
+
+
+
+    return render(request,'contact.html',{'titre':title})
 
 
 def Covidworld(request):

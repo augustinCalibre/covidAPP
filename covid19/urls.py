@@ -13,5 +13,6 @@ urlpatterns = [
     path('prevention',views.prevention),
     path('question',views.question),
     path('sugestion',views.sugestion),
+    path('contact',views.contact),
     path('Covidworld',views.Covidworld),
 ]
