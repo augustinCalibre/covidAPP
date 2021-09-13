@@ -31,8 +31,6 @@ def numActiveCase(x,y,z):
 
 
 
-
-
 # POST ITEM
 
 
@@ -99,26 +97,34 @@ def sugestion(request):
   
 
     title='sugestion'
-    context={'suggestionForms':suggestionForms}
+    context={'suggestionForms':suggestionForms,'titre':title}
     
     return render(request,'sugestion.html',context)
 
 
 
 def contact(request):
+
     title='contact'
+    # form=contactForms(request.POST)
+    # if form.is_valid():
+    #     form.save()
+    #     messages.success(request,'Message bien envoyé')
+
+    
     form=contactForms(request.POST)
     if form.is_valid():
-        form.save()
+        nom = form.cleaned_data['nom']
+        message = form.cleaned_data['suggest']
+        from_email=form.cleaned_data['email']
+        send_mail(nom, message, from_email, ['augustingrah2@gmail.com'])
         messages.success(request,'Message bien envoyé')
+        return render(request,'contact.html',{'titre':title})
+            
 
         
   
   
-
-
-
-
 
 
 
