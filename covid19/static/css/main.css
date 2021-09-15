@@ -39,7 +39,10 @@
   background-color: rgba(107, 103, 103, 0.411);
   border: none;
   border-radius: 20px ;
- 
+}
+  
+.ncas{
+  color: red;
 }
 
 

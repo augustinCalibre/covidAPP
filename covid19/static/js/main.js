@@ -45,7 +45,7 @@ paths.forEach((path) => {
         const item = jsonStore.find((item) => id.toLowerCase() == item.fields.cleSvg.toLowerCase());
         if (item) {
             const { Ncas } = item.fields;
-            if (Ncas > 5000) {
+            if (Ncas > 2000) {
                 e.target.children[0].style.fill = "red";
             }
             else {
