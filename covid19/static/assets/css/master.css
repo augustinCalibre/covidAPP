@@ -219,7 +219,7 @@ a,
     width: 100%;
     height: 100vh;
 		background: rgb(28, 5, 161);
-    background: radial-gradient(circle, rgba(230, 104, 20, 0.575) 0%, rgba(8, 131, 24, 0.479) 48%, rgba(2, 88, 6, 0.527) 100%);
+    background: radial-gradient(circle, rgb(127, 111, 221) 0%, rgba(8, 131, 24, 0.479) 48%, rgba(2, 88, 6, 0.527) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a158ed",endColorstr="#f39808",GradientType=1);
     position: fixed;
     z-index: 999999;
@@ -1256,26 +1256,26 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a158ed",endCo
 }
 
 .feature-box .btn-pink{
-	color: #fff;
-    border-color: #ec407a;
-    background-color: #ec407a;
+	color: #fda203;
+    border-color: #fda203;
+    background-color: #fff;
 }
 
 .feature-box .btn-pink:hover, .feature-box .btn-pink:active, .feature-box .btn-pink:focus {
-    background-color: #db346d;
-    border-color: #db346d;
-    color: #fff;
+    background-color: #fff;
+    border-color: #fda203;
+    color: #fda203;
 }
 
 .feature-box .btn-purple{
 	color: #fff;
-    border-color: #6a82fb;
-    background-color: #6a82fb;
+    border-color: #8bc34a;
+    background-color: #8bc34a;
 }
 
 .feature-box .btn-purple:hover, .feature-box .btn-purple:active, .feature-box .btn-purple:focus {
-    background-color: #546ef1;
-    border-color: #546ef1;
+    background-color: #8bc34a;
+    border-color: #8bc34a;
     color: #fff;
 }
 
@@ -2324,13 +2324,13 @@ button:focus {
 
 .btn-green {
     color: #fff;
-    border: 2px solid #8bc34a;
-    background-color: #8bc34a;
+    border: 2px solid #fda203;
+    background-color: #fda203;
 }
 
 .btn-green:hover, .btn-green:active, .btn-green:focus {
-    background-color: #8bc34a;
-    border-color: #8bc34a;
+    background-color: #fda203;
+    border-color: #fda203;
     color: #fff;
 }
 
@@ -4696,7 +4696,7 @@ li.post-comment {
 }
 
 .footer-main{
-  padding:95px 0 0 0;
+  padding:100px 0 0 0;
   background-color: transparent;
   position: relative;
 }
