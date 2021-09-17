@@ -3,6 +3,7 @@
 
 
 {% block links %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 {% endblock links %}
 
@@ -122,13 +123,20 @@
             </svg>
         </div>
         <div class="modal-svg hide_modal_svg">
-                <h5>Lorem ipsum </h5>
+                <h5 class="titre"></h5>
                 <ul class="case-ul">
 
                 </ul>
         </div>
+
+
+        
+
+
     </div>
 </section>
+
+
 
 <!-- </div>
     
@@ -163,10 +171,14 @@
 
 
 
+
+
 <input type="hidden" id="data" value="{{ncas}}">
 
 </div>
-{% include "footer.html" %}
+
+
+{% comment %} {% include "footer.html" %} {% endcomment %}
 
 {% endblock carte %}
 

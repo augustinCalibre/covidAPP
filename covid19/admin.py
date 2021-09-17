@@ -10,7 +10,7 @@ from .models import contact
 
 
 class cityStatAdmin (admin.ModelAdmin):
-    list_display=('Ncas','Ndeces','Ngueris','Nvacine','cleSvg')
+    list_display=('ville','Ncas','Ndeces','Ngueris','Nvacine','cleSvg')
 
 class suggestionAdmin (admin.ModelAdmin):
     list_display=('nom','email','suggest')
