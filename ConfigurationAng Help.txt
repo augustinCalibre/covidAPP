@@ -33,3 +33,18 @@ path :::Covid20/Settings.py
 1- Add <covid19> to INTALLED App
 2-Add <Template> to TEMPLATES-> DIR[]
 3-ADD STATICFILES-DIRS=['static']
+
+
+
+{% comment %} iNIT mYSQL sETTING {% endcomment %}
+pip install mysqlclient 
+
+
+
+
+
+/** 
+ * @Author: flydreame 
+ * @Date: 2021-09-15 20:53:14 
+ * @Desc:  
+ */

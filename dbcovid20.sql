@@ -170,7 +170,7 @@ CREATE TABLE `covid19_citystat` (
 -- Déchargement des données de la table `covid19_citystat`
 --
 
-INSERT INTO `covid19_citystat` (`id`, `ville`, `Ncas`, `Ndeces`, `Ngueris`, `Nvacine`, `cleSvg`) VALUES
+INSERT INTO `covid19_citystat` ( `ville`, `Ncas`, `Ndeces`, `Ngueris`, `Nvacine`, `cleSvg`) VALUES
 (1, 'Sud-Comoé', 20, 1, 15, 2000, 'CI-SC'),
 (2, 'Lacs', 10, 0, 6, 1500, 'CI-LC'),
 (3, 'Moyen-Comoe', 30, 0, 20, 2000, 'CI-MC'),

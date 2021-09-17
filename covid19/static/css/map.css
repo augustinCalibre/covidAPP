@@ -8,7 +8,9 @@
 .map svg{
   flex:10
 } */
-
+body{
+  
+}
 
 .map-content {
   margin-top: 1rem;
@@ -18,27 +20,136 @@
   align-items: center;
   flex-wrap: wrap;
   flex-grow: 1;
+  position: absolute;
 }
 
 .map-svg,.modal-svg {
-  flex-basis: 45%;
+  flex-basis: 40%;
   padding: 1.5rem;
-  transition: fill 6s;
+  transition: fill 4s;
+  /* border: red solid 1px; */
 }
 
 .modal-svg {
   position: absolute;
-  top: 100px;
   
-  background-color: rgba(255, 255, 255, 0.76);
-  text-align: left;
-  border-radius: 5px;
-  box-shadow: 1px 2px 2px whitesmoke;
+  /* top: 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.918);
+  /* text-align: left; */
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px rgb(243, 119, 3);
 }
 
 .hide_modal_svg {
   display: none;
 }
+
+.modal-svg .case-ul {
+  list-style: none;
+}
+
+.modal-svg h5 {
+  font-size: 1.5rem;
+  color: rgb(238, 120, 9);
+  font-weight: 900;
+}
+
+
+
+.modal-svg .ncas {
+  font-size: 1.5rem;
+    color: rgb(70, 9, 238);
+  font-weight: 400;
+
+ }
+
+ .modal-svg .titre{
+
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.5rem;
+  /* border:  solid rgb(7, 220, 228) 1px; */
+  background: rgb(7, 220, 228) ;
+  border-radius: 15px;
+ }
+
+ .modal-svg .ndeces {
+  font-size: 1.5rem;
+  
+  color: rgb(238, 9, 9);
+  font-weight: 400;
+ }
+ .modal-svg .nguerie {
+  font-size: 1.5rem;
+  
+  color: rgb(3, 184, 3);
+  font-weight: 400;
+ }
+ .modal-svg  .case-ul {
+  display: flex;
+  flex-direction: column;
+ }
+ .modal-svg  .case-ul  li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+ }
+
+ .modal-svg  .Ncas {
+  font-size: 1.5rem;
+  background: rgb(7, 3, 224);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 20px;
+  margin: 5px;
+  font-weight: 400;
+  /* border: solid red 5px; */
+ }
+
+ .modal-svg  .Ngueris {
+  font-size: 1.5rem;
+  background: rgb(3, 184, 3);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 20px;
+  margin: 5px;
+  font-weight: 400;
+ }
+
+ .modal-svg  .Nactif {
+  font-size: 1.5rem;
+  background: rgb(170, 32, 8);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 20px;
+  margin: 5px;
+  font-weight: 400;
+ }
+ .modal-svg  .Ndeces {
+  font-size: 1.5rem;
+  background: rgb(250, 11, 3);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 20px;
+  margin: 5px;
+  font-weight: 400;
+ }
+
+
+
+ .modal-svg .nactif {
+  font-size: 1.5rem;
+  color: rgb(170, 32, 8);
+  font-weight: 400;
+ }
+ 
+ 
+
+ 
 
 .modal-svg h5 {
  font-size: 1.3rem;
